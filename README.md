@@ -26,7 +26,7 @@ This repository implements [SSD (Single Shot MultiBox Detector)](https://arxiv.o
 | :--------------: | :----------:| 
 |[SSD(efficient_net_b3_ssd300_voc0712)](https://pan.baidu.com/s/18Ouz9LTkMOcxXHsA8fxnpg)|  04mn|
 |[SSD(mobilenet_v2_ssd320_voc0712)](https://pan.baidu.com/s/1S4eHnbQXQoDV2SatYl_2DA) |xugv| 
-|[SSD(vgg_ssd300_voc0712)]()||
+|[SSD(vgg_ssd300_voc0712)](https://pan.baidu.com/s/1S6INS3vZ7GqZNhsVVSBe9Q)|3tvt|
 
 
 
