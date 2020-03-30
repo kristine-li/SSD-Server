@@ -1,0 +1,26 @@
+Loading PyTorch model and Flask starting server ...
+Please wait until server has fully started
+Loaded weights from model/vgg_ssd300_voc0712.pth
+ * Serving Flask app "test_web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [30/Mar/2020 18:43:40] "[37mGET / HTTP/1.1[0m" 200 -
+filename: demo/tmp.jpg
+[1, {'predicted_class': 'aeroplane', 'location': [177.6224365234375, 745.9232788085938, 1562.4923095703125, 1022.3201293945312], 'score': '0.67'}, {'predicted_class': 'aeroplane', 'location': [593.4115600585938, 361.7133483886719, 1559.572265625, 605.8015  0%|          | 88.0k/78.1M [02:10<45:18:41, 502B/s]  0%|          | 96.0k/78.1M [02:46<51:10:10, 444B/s]  0%|          | 104k/78.1M [03:00<51:09:51, 444B/s]   0%|          | 112k/78.1M [03:42<59:02:33, 385B/s]  0%|          | 128k/78.1M [03:45<42:33:32, 534B/s]  0%|          | 128k/78.1M [04:00<42:33:32, 534B/s]  0%|          | 136k/78.1M [04:30<67:47:01, 335B/s]  0%|          | 144k/78.1M [04:33<49:39:03, 458B/s]  0%|          | 144k/78.1M [04:50<49:39:03, 458B/s]  0%|          | 152k/78.1M [05:30<81:48:44, 278B/s]  0%|          | 160k/78.1M [05:50<81:48:14, 278B/s]  0%|          | 168k/78.1M [06:28<81:38:47, 278B/s]  0%|          | 176k/78.1M [06:40<81:38:18, 278B/s]  0%|          | 184k/78.1M [07:05<72:28:25, 313B/s]  0%|          | 192k/78.1M [07:20<72:27:59, 313B/s]  0%|          | 200k/78.1M [07:59<72:55:15, 311B/s]  0%|          | 208k/78.1M [08:10<72:54:49, 311B/s]  0%|          | 216k/78.1M [08:54<74:12:08, 306B/s]  0%|          | 224k/78.1M [09:10<74:11:42, 306B/s]  0%|          | 232k/78.1M [09:55<76:56:38, 295B/s]  0%|          | 240k/78.1M [10:10<76:56:10, 295B/s]  0%|          | 248k/78.1M [10:38<71:44:24, 316B/s]  0%|          | 264k/78.1M [10:40<51:15:01, 443B/s]  0%|          | 264k/78.1M [11:00<51:15:01, 443B/s]  0%|          | 272k/78.1M [11:35<81:24:10, 279B/s]  0%|          | 280k/78.1M [11:41<62:24:16, 363B/s]  0%|          | 280k/78.1M [12:00<62:24:16, 363B/s]  0%|          | 288k/78.1M [12:33<86:45:49, 261B/s]  0%|          | 296k/78.1M [12:50<86:45:18, 261B/s]  0%|          | 304k/78.1M [13:19<79:41:57, 284B/s]  0%|          | 312k/78.1M [13:30<79:41:28, 284B/s]765625, 252.19134521484375], 'score': '0.85'}, {'predicted_class': 'person', 'location': [308.8080139160156, 163.2091522216797, 374.13751220703125, 260.7286071777344], 'score': '0.84'}, {'predicted_class': 'person', 'location': [86.20792388916016, 141.025634765625, 157.47518920898438, 261.9474792480469], 'score': '0.66'}, {'predicted_class': 'person', 'location': [166.83753967285156, 157.29776000976562, 218.25271606445312, 245.25779724121094], 'score': '0.62'}, {'load_time': 9.615, 'inference': 1143.741, 'FPS': 0.874}]
+127.0.0.1 - - [30/Mar/2020 18:44:59] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2020 18:44:59] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -
+filename: demo/2020-03-30_18:45:54.452094000342.jpg
+[1, {'predicted_class': 'tvmonitor', 'location': [53.584739685058594, 98.77998352050781, 410.5913391113281, 326.8940734863281], 'score': '1.0'}, {'predicted_class': 'person', 'location': [89.19601440429688, 123.57929229736328, 352.96905517578125, 321.64898681640625], 'score': '0.94'}, {'load_time': 8.858, 'inference': 1186.556, 'FPS': 0.843}]
+127.0.0.1 - - [30/Mar/2020 18:45:55] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2020 18:45:55] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -
+filename: demo/tmp.jpg
+[1, {'predicted_class': 'aeroplane', 'location': [177.6224365234375, 745.9232788085938, 1562.4923095703125, 1022.3201293945312], 'score': '0.67'}, {'predicted_class': 'aeroplane', 'location': [593.4115600585938, 361.7133483886719, 1559.572265625, 605.8015747070312], 'score': '0.63'}, {'load_time': 66.895, 'inference': 1128.685, 'FPS': 0.886}]
+127.0.0.1 - - [30/Mar/2020 18:47:31] "[37mGET /detection_url?imageurl=http://img.jj20.com/up/allimg/311/042211021229/110422021229-11.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2020 18:47:31] "[37mGET /detection_url?imageurl=http://img.jj20.com/up/allimg/311/042211021229/110422021229-11.jpg HTTP/1.1[0m" 200 -
+filename: demo/2020-03-30_18:50:59.366149egg.jpg
+[0, {'load_time': 12.453, 'inference': 1213.293, 'FPS': 0.824}]
+127.0.0.1 - - [30/Mar/2020 18:51:00] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2020 18:51:00] "[37mPOST /detection_upload HTTP/1.1[0m" 200 -

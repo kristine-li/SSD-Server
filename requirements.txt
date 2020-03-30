@@ -1,0 +1,10 @@
+cython
+flask
+numpy
+Pillow==6.1.0
+yacs
+tqdm
+vizer
+opencv-python==4.0.0.21
+torch==1.1.0
+torchvision==0.3.0
